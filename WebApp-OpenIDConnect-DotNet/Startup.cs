@@ -59,7 +59,7 @@ namespace WebApp_OpenIDConnect_DotNet
             app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
             {
                 ClientId = Configuration["AzureAD:ClientId"],
-                Authority = string.Format(CultureInfo.InvariantCulture, Configuration["AzureAd:AadInstance"], "common", "/v2.0"),
+                Authority = string.Format(CultureInfo.InvariantCulture, Configuration["AzureAd:AadInstance"], "organizations", "/v2.0"),
                 ResponseType = OpenIdConnectResponseType.IdToken,
                 PostLogoutRedirectUri = Configuration["AzureAd:PostLogoutRedirectUri"],
                 Events = new OpenIdConnectEvents
