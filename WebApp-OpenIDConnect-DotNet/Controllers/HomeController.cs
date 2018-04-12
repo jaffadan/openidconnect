@@ -15,7 +15,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Retail Reports POC";
 
             return View();
         }
@@ -27,6 +27,12 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
             return View();
         }
 
+        public IActionResult Reports()
+        {
+            ViewData["Message"] = "Acosta Reports.";
+
+            return View();
+        }
         public IActionResult Error(string message)
         {
             ViewBag.Message = message;
