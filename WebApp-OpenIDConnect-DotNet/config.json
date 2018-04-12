@@ -1,7 +1,7 @@
 {
   "AzureAd": {
     "ClientId": "3eb3bd05-c16e-48fc-8a30-c1fe036024a8",
-    "AadInstance": "https://sts.windows.net/42b03d0b-d7f2-403e-b764-0dbdcf0505f6/{0}{1}", // This is the public instance of Azure AD
+    "AadInstance": "https://sts.windows.net/{0}{1}", // This is the public instance of Azure AD
     "PostLogoutRedirectUri": "https://localhost:44353/"
   }
 }
